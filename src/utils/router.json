@@ -1,0 +1,84 @@
+{
+    "navbar":[
+        {
+            "label":"AI助手",
+            "icon": "chat",
+            "activeIcon": "chatFill",
+            "link": "/chat",
+            "activeLink": ["/","/chat"]
+        },
+        {
+            "label": "办公系统",
+            "icon": "dbLight",
+            "activeIcon": "dbFill",
+            "link": "/office",
+            "activeLink": ["/office","/office/outlink"],
+            "ItemList":[
+                {
+                    "id":1,
+                    "icon":"chat",
+                    "name":"邮箱",
+                    "avatarName":"Email",
+                    "desc":"祥生员工邮箱可以点此访问",
+                    "url":"https://webmail.chison.com.cn/index.php?retid=4468035901164965677#chgpassword"
+                },
+                {
+                    "id":2,
+                    "icon":"chat",
+                    "name":"PLM系统",
+                    "avatarName":"PLM",
+                    "desc":"祥生项目管理PLM系统可以点此访问",
+                    "url":"http://plmapp.chison.com.cn:7001/Agile/default/login-cms.jsp"
+                }
+            ]
+        },
+        {
+            "label": "AI工具箱",
+            "icon": "appStoreLight",
+            "activeIcon": "appStoreFill",
+            "link": "/toolbox",
+            "activeLink": ["/toolbox","/toolbox/outlink"],
+            "ItemList":[
+                {
+                    "id":1,
+                    "icon":"chat",
+                    "name":"翻译小助手",
+                    "avatarName":"Translation",
+                    "desc":"一款智能翻译助手",
+                    "url":"http://58.215.177.171:6010/chat/share?shareId=k1qjkklzn5edq7ks4011xc66&chatId=pvcdn9tbxfr5"
+                },
+                {
+                    "id":2,
+                    "icon":"chat",
+                    "name":"chatUI首页",
+                    "avatarName":"chatUI",
+                    "desc":"我就试试能不能跳转",
+                    "url":"https://chatui.io/"
+                },
+                {
+                    "id":3,
+                    "icon":"chat",
+                    "name":"tauri官网",
+                    "avatarName":"Tauri",
+                    "desc":"跳转到tauri首页",
+                    "url":"https://tauri.app/zh-cn/v1/guides"
+                },
+                {
+                    "id":4,
+                    "icon":"chat",
+                    "name":"tailwindcss首页",
+                    "avatarName":"Tailwindcss",
+                    "desc":"跳转到tailwindcss首页",
+                    "url":"https://www.tailwindcss.cn/docs/flex-wrap"
+                }
+            ]
+        },
+        {
+            "label": "系统设置",
+            "icon": "appLight",
+            "activeIcon": "appFill",
+            "link": "/settings",
+            "activeLink": ["/settings"]
+        }
+    ]
+}

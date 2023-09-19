@@ -1,0 +1,102 @@
+{
+  "build": {
+    "beforeBuildCommand": "npm run app:build",
+    "beforeDevCommand": "npm run dev",
+    "devPath": "http://localhost:3000",
+    "distDir": "../out",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "robot",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": false
+    },
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": true,
+        "open": ".*"
+      },
+      "dialog": {
+        "all": true
+      },
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "maximize": true,
+        "minimize": true,
+        "setIcon": true,
+        "setIgnoreCursorEvents": true,
+        "setResizable": true,
+        "show": true,
+        "startDragging": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "setMinSize": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.chison.robot",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": true,
+      "dialog": false,
+      "endpoints": [
+        "https://mickybaby.github.io/robot-version/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEUyQzU4ODk4REVFNEUzMjMKUldRajQrVGVtSWpGNGs2WGIvV1Fxc1FRcFp5YmpmQVVSTk55REdnc1FlcmxRM2RRT3ppNWtIUE8K"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "minHeight": 600,
+        "width": 960,
+        "minWidth": 960,
+        "resizable": true,
+        "title": "robot",
+        "titleBarStyle": "Overlay",
+        "hiddenTitle": true,
+        "center": true
+      }
+    ]
+  }
+}
