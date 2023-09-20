@@ -1,0 +1,4 @@
+.custom_scrollbar ::-webkit-scrollbar{
+    display: none;
+    width: 0;
+}

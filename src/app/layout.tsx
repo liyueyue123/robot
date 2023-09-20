@@ -8,15 +8,18 @@ import { theme } from '@/utils/theme'
 import { useScreenWidth } from "@/hooks/useScreenWidth";
 import PcLayout from "@/components/Layout/PcLayout";
 import PhoneLayout from "@/components/Layout/PhoneLayout";
+import { UpdateModal } from "./settings/modal";
 
 const inter = Inter({subsets: ["latin"]});
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   const { setScreenWidth,isPc } = useScreenWidth()
+
+  /* 设置主题 */
   useEffect(()=>{
     // changeTheme();
-    console.warn('isPc----',isPc)
-  },[isPc])
+    console.warn('inter----',inter.className)
+  },[])
 
   useEffect(() => {
 
@@ -34,7 +37,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   }, [setScreenWidth]);
 
   return (
-    <html lang="en">
+    <html>
       <body className={`${inter.className} h-screen w-full bg-gray-100 dark:bg-black`}>
         <ChakraProvider theme={theme}>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
@@ -42,6 +45,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             <PcLayout>{children}</PcLayout>:
             <PhoneLayout>{children}</PhoneLayout>
           }
+          <UpdateModal />
         </ChakraProvider>
       </body>
     </html>

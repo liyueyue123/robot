@@ -26,8 +26,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className='h-full w-36 pt-6 box-border bg-white dark:bg-slate-900 rounded-tr-xl'>
-      <Center className='mb-5'>
+    <div className='h-full w-36 pt-6 box-border bg-white dark:bg-slate-900'>
+      <Center className='mb-5 pt-6'>
         <Avatar className='w-16 h-16' src={HUMAN_ICON} />
       </Center>
       <Flex flexDirection='column'>
