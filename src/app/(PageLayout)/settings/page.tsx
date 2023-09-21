@@ -1,7 +1,6 @@
 "use client"
 import Main from "@/components/Layout/Main/page";
 import { Box,Text, Card, CardBody, CardHeader, Heading, Stack, StackDivider, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel, Button, Tooltip } from "@chakra-ui/react";
-import { UpdateModal } from "./modal";
 import { useEffect, useState } from "react";
 import { checkUpdate } from '@tauri-apps/api/updater';
 import moment from "moment";

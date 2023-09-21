@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='h-full w-36 pt-6 box-border bg-white dark:bg-slate-900'>
+    <div className='h-full w-36 pt-6 box-border bg-white dark:bg-zinc-900'>
       <Center className='mb-5 pt-6'>
         <Avatar className='w-16 h-16' src={HUMAN_ICON} />
       </Center>
@@ -34,17 +34,15 @@ const Navbar = () => {
         {routerJson.navbar.map(item=>(
           <Center key={item.link}>
             <Box 
-              className='w-20 h-16'
+              className='w-20 h-16 hover:bg-white dark:hover:bg-gray-800'
               {...itemStyles}
               {...(item.activeLink.includes(pathname)
                 ? {
                     color: 'myBlue.700',
-                    bg: 'white !important',
                     boxShadow: '1px 1px 10px rgba(0,0,0,0.2)'
                   }
                 : {
                     color: 'myGray.500',
-                    backgroundColor: 'transparent'
                   })
               }
               {...(item.link !== pathname

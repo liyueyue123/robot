@@ -34,9 +34,11 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
             cursor={'pointer'}
             h={'140px'}
             border={theme.borders.md}
+            // border={'none'}
             boxShadow={'none'}
             userSelect={'none'}
             position={'relative'}
+            // className='bg-white dark:bg-zinc-900'
             _hover={{
               boxShadow: '1px 1px 10px rgba(0,0,0,0.2)',
               borderColor: 'transparent',

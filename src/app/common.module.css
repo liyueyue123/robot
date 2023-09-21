@@ -2,3 +2,38 @@
     display: none;
     width: 0;
 }
+
+
+.delay_0 {
+    opacity: 0;
+    animation-delay: 0s;
+}
+.delay_2 {
+    opacity: 0;
+    animation-delay: 0.4s;
+}
+
+.delay_4 {
+    opacity: 0;
+    animation-delay: 0.8s;
+}
+
+.delay_6 {
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+
+.delay_8 {
+    opacity: 0;
+    animation-delay: 1.6s;
+}
+
+.delay_10 {
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+.delay_11 {
+    opacity: 0;
+    animation-delay: 2.4s;
+}

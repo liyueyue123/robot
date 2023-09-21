@@ -1,10 +1,6 @@
 use anyhow::Result;
 use log::info;
-use tauri::{
-    api::dialog::{blocking::MessageDialogBuilder, MessageDialogButtons},
-    updater::UpdateResponse,
-    AppHandle, Manager, Wry,
-};
+use tauri::{updater::UpdateResponse, AppHandle, Manager, Wry};
 
 pub fn run_check_update(app: AppHandle<Wry>, silent: bool, has_msg: Option<bool>) {
     tauri::async_runtime::spawn(async move {
@@ -43,36 +39,31 @@ pub async fn silent_install(app: AppHandle<Wry>, update: UpdateResponse<Wry>) ->
 
     let body = update.body().unwrap();
 
-    //     tauri::api::dialog::blocking::message(
-    //         parent_window,
-    //         format!(r#"新版本的 {} 已经发布! "#, "AI办公助手"),
-    //         format!(
-    //             r#"{} {} 可供下載,您现在的版本是 {}
-
-    // Release Notes:
-    // {}"#,
-    //             "AI办公助手",
-    //             update.latest_version(),
-    //             package_info.version,
-    //             body
-    //         ),
-    //     );
-    ok_update_version_dialog(
+    tauri::api::dialog::blocking::message(
+        parent_window,
         format!(r#"新版本的 {} 已经发布! "#, "AI办公助手"),
         format!(
             r#"{} {} 可供下載,您现在的版本是 {}
 
-Release Notes:
-{}"#,
+    Release Notes:
+    {}"#,
             "AI办公助手",
             update.latest_version(),
             package_info.version,
             body
         ),
     );
+
     update.download_and_install().await?;
 
-    restart_app_dialog(app);
+    let should_exit = tauri::api::dialog::blocking::ask(
+        parent_window,
+        "重新启动应用程序",
+        "应用安装成功，是否立即重新启动应用程序?",
+    );
+    if should_exit {
+        app.restart();
+    }
 
     Ok(())
 }
@@ -85,27 +76,14 @@ pub async fn prompt_for_install(app: AppHandle<Wry>, update: UpdateResponse<Wry>
 
     let body = update.body().unwrap();
 
-    //     let should_install = tauri::api::dialog::blocking::ask(
-    //         parent_window,
-    //         format!(r#"新版本的 {} 已经发布! "#, "AI办公助手"),
-    //         format!(
-    //             r#"{} {} 可供下載,您现在的版本是 {}
-
-    // Release Notes:
-    // {}"#,
-    //             "AI办公助手",
-    //             update.latest_version(),
-    //             package_info.version,
-    //             body
-    //         ),
-    //     );
-    let should_install = ok_cancel_update_version_dialog(
+    let should_install = tauri::api::dialog::blocking::ask(
+        parent_window,
         format!(r#"新版本的 {} 已经发布! "#, "AI办公助手"),
         format!(
             r#"{} {} 可供下載,您现在的版本是 {}
 
-Release Notes:
-{}"#,
+    Release Notes:
+    {}"#,
             "AI办公助手",
             update.latest_version(),
             package_info.version,
@@ -116,36 +94,15 @@ Release Notes:
     if should_install {
         update.download_and_install().await?;
 
-        restart_app_dialog(app);
+        let should_exit = tauri::api::dialog::blocking::ask(
+            parent_window,
+            "重新启动应用程序",
+            "应用安装成功，是否立即重新启动应用程序?",
+        );
+        if should_exit {
+            app.restart();
+        }
     }
 
     Ok(())
-}
-
-fn restart_app_dialog(app: AppHandle) {
-    let should_exit = MessageDialogBuilder::new(
-        "重新启动应用程序",
-        "应用安装成功，是否立即重新启动应用程序?",
-    )
-    .buttons(MessageDialogButtons::OkCancelWithLabels(
-        "确定".to_string(),
-        "取消".to_string(),
-    ));
-    if should_exit.show() {
-        app.restart();
-    }
-}
-
-fn ok_cancel_update_version_dialog(title: String, message: String) -> bool {
-    MessageDialogBuilder::new(title, message)
-        .buttons(MessageDialogButtons::OkCancelWithLabels(
-            "确定".to_string(),
-            "取消".to_string(),
-        ))
-        .show()
-}
-
-fn ok_update_version_dialog(title: String, message: String) {
-    MessageDialogBuilder::new(title, message)
-        .buttons(MessageDialogButtons::OkWithLabel("确定".to_string()));
 }

@@ -2,21 +2,36 @@ use tauri::{AboutMetadata, CustomMenuItem, Manager, Menu, MenuItem, Submenu, Win
 
 use crate::{config, utils};
 
+const ABOUT: &str = "about";
+const CHECK_UPDATE: &str = "check_update";
+const NAME: &str = "AI办公助手";
+
 pub fn init_system_menu() -> Menu {
-    let name = "AI办公助手";
 
     let app_menu = Submenu::new(
-        name,
+        NAME,
         Menu::with_items([
             #[cfg(target_os = "macos")]
-            MenuItem::About(name.into(), AboutMetadata::default()).into(),
+            MenuItem::About(NAME.into(), AboutMetadata::default()).into(),
             #[cfg(not(target_os = "macos"))]
             CustomMenuItem::new("about", "关于").into(),
             CustomMenuItem::new("check_update", "检查更新").into(),
         ]),
     );
 
-    Menu::new().add_submenu(app_menu)
+    let edit_menu = Submenu::new(
+        "Edit",
+        Menu::new()
+            .add_native_item(MenuItem::Undo)
+            .add_native_item(MenuItem::Redo)
+            .add_native_item(MenuItem::Separator)
+            .add_native_item(MenuItem::Cut)
+            .add_native_item(MenuItem::Copy)
+            .add_native_item(MenuItem::Paste)
+            .add_native_item(MenuItem::SelectAll),
+    );
+
+    Menu::new().add_submenu(app_menu).add_submenu(edit_menu)
 }
 
 pub fn menu_event(event: WindowMenuEvent<tauri::Wry>) {
@@ -26,7 +41,7 @@ pub fn menu_event(event: WindowMenuEvent<tauri::Wry>) {
 
     match menu_id {
         // App
-        "about" => {
+        ABOUT => {
             let tauri_conf = config::tauri_conf::get_tauri_conf().unwrap();
 
             let windows = app.windows();
@@ -41,7 +56,7 @@ pub fn menu_event(event: WindowMenuEvent<tauri::Wry>) {
                 ),
             );
         }
-        "check_update" => {
+        CHECK_UPDATE => {
             utils::updater::run_check_update(app, false, Some(true));
         }
         _ => (),

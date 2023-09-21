@@ -51,7 +51,7 @@ export const UpdateModal=()=>{
                 }}
             >检查更新</Button>
             <Modal size='lg' isCentered isOpen={isOpen} onClose={()=>{}}>
-                {overlay}
+                {/* {overlay} */}
                 <ModalContent>
                     <ModalHeader>版本更新中</ModalHeader>
                     {/* <ModalCloseButton /> */}
@@ -67,7 +67,7 @@ export const UpdateModal=()=>{
                             />
                         </Box>:
                         <>
-                            <Box>{progressInfo}</Box>
+                            <Box>{Math.round(progressInfo/2)}%</Box>
                             <Progress className='mb-6' hasStripe value={progressInfo/2} />
                         </>}
                     </ModalBody>

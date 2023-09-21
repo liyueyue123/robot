@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "robot",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "tauri": {
     "systemTray": {
@@ -80,6 +80,7 @@
       "active": true,
       "dialog": false,
       "endpoints": [
+        "https://qiucheng.synology.me:801/latest.json",
         "https://mickybaby.github.io/robot-version/latest.json"
       ],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEUyQzU4ODk4REVFNEUzMjMKUldRajQrVGVtSWpGNGs2WGIvV1Fxc1FRcFp5YmpmQVVSTk55REdnc1FlcmxRM2RRT3ppNWtIUE8K"
@@ -92,10 +93,18 @@
         "width": 960,
         "minWidth": 960,
         "resizable": true,
-        "title": "robot",
+        "title": "AI办公助手",
         "titleBarStyle": "Overlay",
         "hiddenTitle": true,
         "center": true
+      },
+      {
+        "center": true,
+        "height": 600,
+        "decorations": false,
+        "width": 960,
+        "label": "splashscreen",
+        "url": "loading"
       }
     ]
   }
