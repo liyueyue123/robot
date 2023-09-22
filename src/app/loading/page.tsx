@@ -7,7 +7,7 @@ import styles from '@/app/common.module.css'
 import { invoke } from '@tauri-apps/api/tauri';
 
 const LoadingPage = () => {
-    let [count, setCount] = useState(5);
+    let [count, setCount] = useState(3);
     const router = useRouter()
     useInterval(() => {
         setCount(count - 1);

@@ -27,10 +27,10 @@ const Navbar = () => {
 
   return (
     <div className='h-full w-36 pt-6 box-border bg-white dark:bg-zinc-900'>
-      <Center className='mb-5 pt-6'>
+      {/* <Center className='mb-5 pt-6'>
         <Avatar className='w-16 h-16' src={HUMAN_ICON} />
-      </Center>
-      <Flex flexDirection='column'>
+      </Center> */}
+      <Flex flexDirection='column' className='pt-4'>
         {routerJson.navbar.map(item=>(
           <Center key={item.link}>
             <Box 
