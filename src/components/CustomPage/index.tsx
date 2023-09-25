@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 // import Avatar from '@/components/Avatar';
 import styles from './index.module.css';
 import { PageRouterEntity } from "@/types/page";
+import { invoke } from "@tauri-apps/api/tauri";
 
 const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
   const { customInfo } = props
@@ -19,14 +20,19 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
     return params.toString();
   };
 
+  /* 打开window */
+  const openWindow = async (url: string)=>{
+    console.warn('url----',url)
+    await invoke('create_external_windows',{label:'office_outlink',externalUrl:url})
+  }
   return (
     <>
       <Box className='w-full text-2xl font-bold text-blue-700 pb-6'>我的{customInfo.label}</Box>
-      <Grid
+      {Array.isArray(customInfo.ItemList)&&customInfo.ItemList.length>0?<Grid
         gridTemplateColumns={['1fr', 'repeat(3,1fr)', 'repeat(4,1fr)', 'repeat(5,1fr)']}
         gridGap={5}
       >
-        {Array.isArray(customInfo.ItemList)&&customInfo.ItemList?.map((app) => (
+        {customInfo.ItemList?.map((app) => (
           <Card
             key={app.id}
             py={4}
@@ -49,9 +55,14 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
                 display: 'block'
               }
             }}
-            onClick={() => 
-              router.push(`${customInfo.link}/outlink?${createQueryString('url', app.url)}`)
+            onClick={() => {
+              if(['/office'].includes(customInfo.link)){
+                openWindow(app.url)
+              }else{
+                router.push(`${customInfo.link}/outlink?${createQueryString('url', app.url)}`)
+              }
             }
+          }
           >
             <Flex alignItems={'center'} h={'38px'}>
               <Avatar name={app.avatarName} className='w-6 h-6' />
@@ -72,11 +83,11 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
               right={4}
               bottom={4}
               size={'sm'}
-              icon={
-                <MyTooltip label={'去聊天'}>
-                  <MyIcon name={app.icon as any} w={'14px'} />
-                </MyTooltip>
-              }
+              // icon={
+              //   <MyTooltip label={'去聊天'}>
+              //     <MyIcon name={app.icon as any} w={'14px'} />
+              //   </MyTooltip>
+              // }
               variant={'base'}
               borderRadius={'md'}
               aria-label={'delete'}
@@ -91,7 +102,13 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
             />
           </Card>
         ))}
-      </Grid>
+      </Grid>:
+      <Box className='w-full h-3/5 flex flex-col justify-center items-center'>
+        <MyIcon name="empty" w={'52px'} h={'52px'} color={'transparent'}/>
+        <Box mt={2} color={'myGray.500'}>
+          coming soon~
+        </Box>
+      </Box>}
     </>
   )
 };

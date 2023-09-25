@@ -1,10 +1,18 @@
 use anyhow::Result;
 use log::info;
-use tauri::{updater::UpdateResponse, AppHandle, Manager, Wry};
+use tauri::{updater::UpdateResponse, AppHandle, Wry};
+
+use crate::{plugin::update::check_update_dialog, APP_UPDATE};
+
+const ALREADY_UP_TO_DATE_DIALOG_ENVET: &str = "already_up_to_date_dialog_envet";
+const SILENT_INSTALL_DIALOG_ENVET: &str = "silent_install_dialog_envet";
+
+const PROMPT_FOR_INSTALL_DIALOG_ENVET: &str = "prompt_for_install_dialog_envet";
 
 pub fn run_check_update(app: AppHandle<Wry>, silent: bool, has_msg: Option<bool>) {
     tauri::async_runtime::spawn(async move {
         if let Ok(update_resp) = app.updater().check().await {
+            APP_UPDATE.get_or_init(|| update_resp.clone());
             if update_resp.is_update_available() {
                 if silent {
                     tauri::async_runtime::spawn(async move {
@@ -17,12 +25,18 @@ pub fn run_check_update(app: AppHandle<Wry>, silent: bool, has_msg: Option<bool>
                 }
             } else if let Some(v) = has_msg {
                 if v {
-                    let windows = app.windows();
-                    let parent_window = windows.values().next();
-                    tauri::api::dialog::message(
-                        parent_window,
-                        "AI办公助手",
-                        "您的AI办公助手是最新的",
+                    // let windows = app.windows();
+                    // let parent_window = windows.values().next();
+                    // tauri::api::dialog::message(
+                    //     parent_window,
+                    //     "AI办公助手",
+                    //     "您的AI办公助手是最新的",
+                    // );
+                    check_update_dialog(
+                        "AI办公助手".to_string(),
+                        "您的AI办公助手是最新的".to_string(),
+                        ALREADY_UP_TO_DATE_DIALOG_ENVET,
+                        app,
                     );
                 }
             }
@@ -32,77 +46,53 @@ pub fn run_check_update(app: AppHandle<Wry>, silent: bool, has_msg: Option<bool>
 
 pub async fn silent_install(app: AppHandle<Wry>, update: UpdateResponse<Wry>) -> Result<()> {
     info!("silent_install");
-    let windows = app.windows();
-    let parent_window = windows.values().next();
+    // let windows = app.windows();
+    // let parent_window = windows.values().next();
 
     let package_info = app.package_info().clone();
 
     let body = update.body().unwrap();
-
-    tauri::api::dialog::blocking::message(
-        parent_window,
+    check_update_dialog(
         format!(r#"新版本的 {} 已经发布! "#, "AI办公助手"),
         format!(
             r#"{} {} 可供下載,您现在的版本是 {}
 
-    Release Notes:
+    Release Notes
     {}"#,
             "AI办公助手",
             update.latest_version(),
             package_info.version,
             body
         ),
+        SILENT_INSTALL_DIALOG_ENVET,
+        app,
     );
-
-    update.download_and_install().await?;
-
-    let should_exit = tauri::api::dialog::blocking::ask(
-        parent_window,
-        "重新启动应用程序",
-        "应用安装成功，是否立即重新启动应用程序?",
-    );
-    if should_exit {
-        app.restart();
-    }
 
     Ok(())
 }
 
 pub async fn prompt_for_install(app: AppHandle<Wry>, update: UpdateResponse<Wry>) -> Result<()> {
     info!("prompt_for_install");
-    let windows = app.windows();
-    let parent_window = windows.values().next();
+    // let windows = app.windows();
+    // let parent_window = windows.values().next();
     let package_info = app.package_info().clone();
 
     let body = update.body().unwrap();
-
-    let should_install = tauri::api::dialog::blocking::ask(
-        parent_window,
+    check_update_dialog(
         format!(r#"新版本的 {} 已经发布! "#, "AI办公助手"),
         format!(
             r#"{} {} 可供下載,您现在的版本是 {}
 
-    Release Notes:
+    Release Notes
     {}"#,
             "AI办公助手",
             update.latest_version(),
             package_info.version,
             body
         ),
+        PROMPT_FOR_INSTALL_DIALOG_ENVET,
+        app,
     );
-
-    if should_install {
-        update.download_and_install().await?;
-
-        let should_exit = tauri::api::dialog::blocking::ask(
-            parent_window,
-            "重新启动应用程序",
-            "应用安装成功，是否立即重新启动应用程序?",
-        );
-        if should_exit {
-            app.restart();
-        }
-    }
 
     Ok(())
 }

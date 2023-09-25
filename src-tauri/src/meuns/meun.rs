@@ -7,7 +7,6 @@ const CHECK_UPDATE: &str = "check_update";
 const NAME: &str = "AI办公助手";
 
 pub fn init_system_menu() -> Menu {
-
     let app_menu = Submenu::new(
         NAME,
         Menu::with_items([

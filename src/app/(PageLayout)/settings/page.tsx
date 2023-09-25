@@ -1,9 +1,8 @@
 "use client"
 import Main from "@/components/Layout/Main/page";
-import { Box,Text, Card, CardBody, CardHeader, Heading, Stack, StackDivider, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel, Button, Tooltip } from "@chakra-ui/react";
+import { Box, Card, CardBody, CardHeader, Heading, Stack, StackDivider, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel, Button, Tooltip } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { checkUpdate } from '@tauri-apps/api/updater';
-import moment from "moment";
 import { getVersion } from "@tauri-apps/api/app";
 
 
@@ -37,9 +36,6 @@ const SettingsPage = () => {
                 当前版本：{version} 
                 {isUpdate&&<Box w={'5px'} h={'5px'} bg={'myRead.600'} borderRadius={'20px'} />}
               </Box>
-              {/* <Box className='mb-4 flex'>版本更新：
-                <UpdateModal />
-              </Box> */}
             </Box>
           </Stack>
         </CardBody>

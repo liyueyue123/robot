@@ -3,9 +3,11 @@ import CustomPage from "@/components/CustomPage";
 import Main from "@/components/Layout/Main/page";
 import { PageRouterEntity } from "@/types/page";
 import routerJson from '@/utils/router.json'
+import { usePathname } from "next/navigation";
 
 const OfficePage = ()=>{
-  const pageInfos: PageRouterEntity =  routerJson?.navbar[1] as PageRouterEntity
+  const pathname = usePathname()
+  const pageInfos: PageRouterEntity =  routerJson.navbar?.filter(n=>n.link===pathname)[0] as PageRouterEntity
   return (
     <Main>
       <CustomPage customInfo={pageInfos}/>

@@ -28,8 +28,12 @@ async fn main() {
         )
         .invoke_handler(tauri::generate_handler![
             update::run_check_update,
+            update::check_update_dialog,
+            update::app_restart,
+            update::download_and_install,
             config::get_version,
-            window::close_splashscreen
+            window::close_splashscreen,
+            window::create_external_windows,
         ])
         .menu(init_system_menu())
         .system_tray(init_system_tray())

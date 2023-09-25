@@ -1,11 +1,16 @@
 "use client"
+import CustomPage from "@/components/CustomPage";
 import Main from "@/components/Layout/Main/page";
-import { Box } from "@chakra-ui/react";
+import { PageRouterEntity } from "@/types/page";
+import routerJson from '@/utils/router.json'
+import { usePathname } from "next/navigation";
 
 const ChatPage = () => {
+  const pathname = usePathname()
+  const pageInfos: PageRouterEntity =  routerJson.navbar?.filter(n=>n.link===pathname||'/')[0] as PageRouterEntity
   return (
     <Main>
-      <Box className='w-full text-2xl font-bold text-blue-700'>我的聊天</Box>
+      <CustomPage customInfo={pageInfos}/>
     </Main>
   )
 };

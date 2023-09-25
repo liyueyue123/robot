@@ -1,5 +1,16 @@
 # UPDATE LOG
 
+## v1.4.0
+
+Note: 功能添加！
+
+Fix:
+
+- 弹窗样式更新
+
+
+# UPDATE LOG
+
 ## v1.3.0
 
 Note: 错误修复和改进
