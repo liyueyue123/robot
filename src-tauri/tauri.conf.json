@@ -17,6 +17,14 @@
     },
     "allowlist": {
       "all": false,
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": [
+          "https://**",
+          "http://**"
+        ]
+      },
       "shell": {
         "all": true,
         "open": ".*"
@@ -59,7 +67,7 @@
       "longDescription": "",
       "macOS": {
         "entitlements": null,
-        "exceptionDomain": "",
+        "exceptionDomain": "plmapp.chison.com.cn",
         "frameworks": [],
         "providerShortName": null,
         "signingIdentity": null
