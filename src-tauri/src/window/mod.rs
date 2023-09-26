@@ -1,7 +1,6 @@
 use crate::APP;
 use tauri::Menu;
 
-
 #[cfg(target_os = "macos")]
 pub fn create_external_windows(label: String, external_url: String) {
     let app = APP.get().unwrap();
@@ -27,7 +26,6 @@ pub fn create_external_windows(label: String, external_url: String) {
     )
     .min_inner_size(1000.00, 600.00)
     .title("")
-    .decorations(false)
     .menu(Menu::new())
     .build()
     .expect("failed to build window");
