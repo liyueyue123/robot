@@ -13,6 +13,7 @@ export type PageItemEntity = {
     icon: string 
     name: string
     windowKey: string
+    target?: string
     avatarName: string
     desc: string
     url: string

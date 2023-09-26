@@ -56,7 +56,7 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
               }
             }}
             onClick={() => {
-              if(['/office'].includes(customInfo.link)){
+              if(!app.target){
                 openWindow(app.url,app.windowKey)
               }else{
                 router.push(`${customInfo.link}/outlink?${createQueryString('url', app.url)}`)
