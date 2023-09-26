@@ -21,9 +21,9 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
   };
 
   /* 打开window */
-  const openWindow = async (url: string)=>{
-    console.warn('url----',url)
-    await invoke('create_external_windows',{label:'office_outlink',externalUrl:url})
+  const openWindow = async (url: string,key: string)=>{
+    console.warn('url----',url,key)
+    await invoke('create_external_windows',{label:`office_outlink_${key}`,externalUrl:url})
   }
   return (
     <>
@@ -57,7 +57,7 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
             }}
             onClick={() => {
               if(['/office'].includes(customInfo.link)){
-                openWindow(app.url)
+                openWindow(app.url,app.windowKey)
               }else{
                 router.push(`${customInfo.link}/outlink?${createQueryString('url', app.url)}`)
               }

@@ -16,7 +16,7 @@ pub fn create_external_windows(label: String, external_url: String) {
 }
 
 #[cfg(not(target_os = "macos"))]
-pub fn create_external_windows(label: &str, external_url: &str) {
+pub fn create_external_windows(label: String, external_url: String) {
     let app = APP.get().unwrap();
     tauri::WindowBuilder::new(
         app,
