@@ -39,9 +39,8 @@
         "removeFile": true,
         "removeDir": true,
         "scope": [
-          "$HOME/robot_conf/**",
-          "$DOWNLOAD/**",
-          "$DESKTOP/robot_conf/**"
+          "$HOME/robot_config/**",
+          "$DOWNLOAD/**"
         ]
       },
       "path": {
