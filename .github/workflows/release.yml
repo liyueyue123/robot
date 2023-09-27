@@ -119,29 +119,29 @@ jobs:
 
       - name: Rename artifacts
         run: |
-          mv "artifacts/aarch64/dmg/robot_${{ env.version }}_aarch64.dmg" "artifacts/robot_${{ env.version }}_macos_aarch64.dmg"
-          mv "artifacts/aarch64/macos/robot.app.tar.gz" "artifacts/robot_${{ env.version }}_macos_aarch64.app.tar.gz"
-          mv "artifacts/aarch64/macos/robot.app.tar.gz.sig" "artifacts/robot_${{ env.version }}_macos_aarch64.app.tar.gz.sig"
+          mv "artifacts/aarch64/dmg/robot_1.8.0_aarch64.dmg" "artifacts/robot_1.8.0_macos_aarch64.dmg"
+          mv "artifacts/aarch64/macos/robot.app.tar.gz" "artifacts/robot_1.8.0_macos_aarch64.app.tar.gz"
+          mv "artifacts/aarch64/macos/robot.app.tar.gz.sig" "artifacts/robot_1.8.0_macos_aarch64.app.tar.gz.sig"
 
-          mv "artifacts/x86_64/dmg/robot_${{ env.version }}_x64.dmg" "artifacts/robot_${{ env.version }}_macos_x86_64.dmg"
-          mv "artifacts/x86_64/macos/robot.app.tar.gz" "artifacts/robot_${{ env.version }}_macos_x86_64.app.tar.gz"
-          mv "artifacts/x86_64/macos/robot.app.tar.gz.sig" "artifacts/robot_${{ env.version }}_macos_x86_64.app.tar.gz.sig"
+          mv "artifacts/x86_64/dmg/robot_1.8.0_x64.dmg" "artifacts/robot_1.8.0_macos_x86_64.dmg"
+          mv "artifacts/x86_64/macos/robot.app.tar.gz" "artifacts/robot_1.8.0_macos_x86_64.app.tar.gz"
+          mv "artifacts/x86_64/macos/robot.app.tar.gz.sig" "artifacts/robot_1.8.0_macos_x86_64.app.tar.gz.sig"
 
-          mv "artifacts/x86_64/deb/robot_${{ env.version }}_amd64.deb" "artifacts/x86_64/deb/robot_${{ env.version }}_linux_x86_64.deb"
-          mv "artifacts/x86_64/appimage/robot_${{ env.version }}_amd64.AppImage.tar.gz" "artifacts/robot_${{ env.version }}_linux_x86_64.AppImage.tar.gz"
-          mv "artifacts/x86_64/appimage/robot_${{ env.version }}_amd64.AppImage.tar.gz.sig" "artifacts/robot_${{ env.version }}_linux_x86_64.AppImage.tar.gz.sig"
+          mv "artifacts/x86_64/deb/robot_1.8.0_amd64.deb" "artifacts/x86_64/deb/robot_1.8.0_linux_x86_64.deb"
+          mv "artifacts/x86_64/appimage/robot_1.8.0_amd64.AppImage.tar.gz" "artifacts/robot_1.8.0_linux_x86_64.AppImage.tar.gz"
+          mv "artifacts/x86_64/appimage/robot_1.8.0_amd64.AppImage.tar.gz.sig" "artifacts/robot_1.8.0_linux_x86_64.AppImage.tar.gz.sig"
 
-          mv "artifacts/x86_64/robot_${{ env.version }}_x64_en-US.msi" "artifacts/robot_${{ env.version }}_windows_x86_64.msi"
-          mv "artifacts/x86_64/robot_${{ env.version }}_x64_en-US.msi.zip" "artifacts/robot_${{ env.version }}_windows_x86_64.msi.zip"
-          mv "artifacts/x86_64/robot_${{ env.version }}_x64_en-US.msi.zip.sig" "artifacts/robot_${{ env.version }}_windows_x86_64.msi.zip.sig"
+          mv "artifacts/x86_64/robot_1.8.0_x64_en-US.msi" "artifacts/robot_1.8.0_windows_x86_64.msi"
+          mv "artifacts/x86_64/robot_1.8.0_x64_en-US.msi.zip" "artifacts/robot_1.8.0_windows_x86_64.msi.zip"
+          mv "artifacts/x86_64/robot_1.8.0_x64_en-US.msi.zip.sig" "artifacts/robot_1.8.0_windows_x86_64.msi.zip.sig"
 
       - name: Create Release
         uses: softprops/action-gh-release@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ env.version }}
-          name: robot v${{ env.version }}
+          tag_name: v1.8.0
+          name: robot v1.8.0
           body: See the assets to download this version and install.
           prerelease: false
           generate_release_notes: false
