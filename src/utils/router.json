@@ -1,38 +1,51 @@
 {
-    "navbar":[
+    "navbar": [
         {
-            "label":"祥生AI",
+            "label": "祥生AI",
             "icon": "chat",
             "activeIcon": "chatFill",
             "link": "/chat",
-            "activeLink": ["/","/chat","/chat/outlink"],
-            "ItemList":[
+            "activeLink": [
+                "/",
+                "/chat",
+                "/chat/outlink"
+            ],
+            "ItemList": [
                 {
-                    "id":1,
-                    "name":"ChisonGPT",
-                    "windowKey":"ChisonGPT",
-                    "target":"",
-                    "avatarName":"ChisonGPT",
-                    "desc":"专属祥生的私有GPT",
-                    "url":"http://192.168.89.206:6019/chat/share?shareId=9yij9d9puf73ujbeqzqscgh2"
+                    "id": 1,
+                    "name": "ChisonGPT",
+                    "windowKey": "ChisonGPT",
+                    "target": "",
+                    "avatarName": "ChisonGPT",
+                    "desc": "专属祥生的私有GPT",
+                    "url": "http://192.168.89.206:6019/chat/share?shareId=9yij9d9puf73ujbeqzqscgh2"
                 },
-				{
-                    "id":2,
-                    "name":"翻译助手",
-                    "windowKey":"Translation",
-                    "target":"",
-                    "avatarName":"Translation",
-                    "desc":"中英文翻译小工具",
-                    "url":"http://192.168.89.206:6019/chat/share?shareId=19olpheoa2l0ihg55l78rm9w"
+                {
+                    "id": 2,
+                    "name": "法规助手",
+                    "windowKey": "Laws",
+                    "target": "",
+                    "avatarName": "法规",
+                    "desc": "医疗器械法规知识问答",
+                    "url": "http://192.168.89.206:6019/chat/share?shareId=chjsypwpcg1oo6415xb9qx7u"
                 },
-				{
-                    "id":3,
-                    "name":"医疗器械法规助手",
-                    "windowKey":"Laws",
-                    "target":"",
-                    "avatarName":"法规",
-                    "desc":"医疗器械法规知识问答",
-                    "url":"http://192.168.89.206:6019/chat/share?shareId=chjsypwpcg1oo6415xb9qx7u"
+                {
+                    "id": 3,
+                    "name": "产品助手",
+                    "windowKey": "Translation",
+                    "target": "",
+                    "avatarName": "Translation",
+                    "desc": "祥生产品知识",
+                    "url": "http://192.168.89.206:6019/chat/share?shareId=3t19cg42tvtslaisdyx62b2k"
+                },
+                {
+                    "id": 4,
+                    "name": "翻译助手",
+                    "windowKey": "Translation",
+                    "target": "",
+                    "avatarName": "Translation",
+                    "desc": "中英文翻译小工具",
+                    "url": "http://192.168.89.206:6019/chat/share?shareId=19olpheoa2l0ihg55l78rm9w"
                 }
             ]
         },
@@ -41,61 +54,64 @@
             "icon": "dbLight",
             "activeIcon": "dbFill",
             "link": "/office",
-            "activeLink": ["/office","/office/outlink"],
-            "ItemList":[
+            "activeLink": [
+                "/office",
+                "/office/outlink"
+            ],
+            "ItemList": [
                 {
-                    "id":1,
-                    "name":"邮箱",
-                    "windowKey":"Email",
-                    "target":"",
-                    "avatarName":"Email",
-                    "desc":"祥生员工邮箱可以点此访问",
-                    "url":"https://webmail.chison.com.cn/index.php"
+                    "id": 1,
+                    "name": "邮箱",
+                    "windowKey": "Email",
+                    "target": "",
+                    "avatarName": "Email",
+                    "desc": "祥生员工邮箱可以点此访问",
+                    "url": "https://webmail.chison.com.cn/index.php"
                 },
                 {
-                    "id":2,
-                    "name":"PLM系统",
-                    "windowKey":"PLM",
-                    "target":"",
-                    "avatarName":"PLM",
-                    "desc":"祥生项目管理PLM系统可以点此访问",
-                    "url":"http://plmapp.chison.com.cn:7001/Agile/default/login-cms.jsp"
+                    "id": 2,
+                    "name": "PLM系统",
+                    "windowKey": "PLM",
+                    "target": "",
+                    "avatarName": "PLM",
+                    "desc": "祥生项目管理PLM系统可以点此访问",
+                    "url": "http://plmapp.chison.com.cn:7001/Agile/default/login-cms.jsp"
                 },
                 {
-                    "id":3,
-                    "name":"禅道",
-                    "windowKey":"Bug",
-                    "target":"",
-                    "avatarName":"Bug",
-                    "desc":"集产品管理、项目管理、质量管理、文档管理、组织管理和事务管理于一体的研发项目管理软件",
-                    "url":"http://192.168.20.23:8088/zentao/user-login.html"
+                    "id": 3,
+                    "name": "禅道",
+                    "windowKey": "Bug",
+                    "target": "",
+                    "avatarName": "Bug",
+                    "desc": "集产品管理、项目管理、质量管理、文档管理、组织管理和事务管理于一体的研发项目管理软件",
+                    "url": "http://192.168.20.23:8088/zentao/user-login.html"
                 },
                 {
-                    "id":4,
-                    "name":"OA办公",
-                    "windowKey":"OA",
-                    "target":"",
-                    "avatarName":"O A",
-                    "desc":"OA办公平台",
-                    "url":"http://oa.chison.com.cn:44366/wui/index.html#/"
+                    "id": 4,
+                    "name": "OA办公",
+                    "windowKey": "OA",
+                    "target": "",
+                    "avatarName": "O A",
+                    "desc": "OA办公平台",
+                    "url": "http://oa.chison.com.cn:44366/wui/index.html#/"
                 },
                 {
-                    "id":5,
-                    "name":"东宝",
-                    "windowKey":"ToHo",
-                    "target":"",
-                    "avatarName":"东宝",
-                    "desc":"考勤,请假",
-                    "url":"https://hr.chison.com.cn:44380/"
+                    "id": 5,
+                    "name": "东宝",
+                    "windowKey": "ToHo",
+                    "target": "",
+                    "avatarName": "东宝",
+                    "desc": "考勤,请假",
+                    "url": "https://hr.chison.com.cn:44380/"
                 },
                 {
-                    "id":6,
-                    "name":"北森",
-                    "windowKey":"iTalent",
-                    "target":"",
-                    "avatarName":"北森",
-                    "desc":"培训，绩效",
-                    "url":"https://www.italent.cn/portal/iTalentHome/"
+                    "id": 6,
+                    "name": "北森",
+                    "windowKey": "iTalent",
+                    "target": "",
+                    "avatarName": "北森",
+                    "desc": "培训，绩效",
+                    "url": "https://www.italent.cn/portal/iTalentHome/"
                 }
             ]
         },
@@ -104,25 +120,37 @@
             "icon": "appStoreLight",
             "activeIcon": "appStoreFill",
             "link": "/toolbox",
-            "activeLink": ["/toolbox","/toolbox/outlink"],
-            "ItemList":[
+            "activeLink": [
+                "/toolbox",
+                "/toolbox/outlink"
+            ],
+            "ItemList": [
                 {
-                    "id":1,
-                    "name":"BoardMix",
-                    "windowKey":"BoardMix",
-                    "target":"",
-                    "avatarName":"BoardMix",
-                    "desc":"一键生成PPT，思维导图和图片",
-                    "url":"https://boardmix.cn/app/home/ppt"
+                    "id": 1,
+                    "name": "xfyun",
+                    "windowKey": "xfyun",
+                    "target": "",
+                    "avatarName": "讯飞星火大模型",
+                    "desc": "多模态，PPT生成，免费",
+                    "url": "https://xinghuo.xfyun.cn/desk"
                 },
                 {
-                    "id":2,
-                    "name":"LogoAI",
-                    "windowKey":"LogoAI",
-                    "target":"",
-                    "avatarName":"LogoAI",
-                    "desc":"生成Logo",
-                    "url":"https://www.logoai.com/logo-maker"
+                    "id": 2,
+                    "name": "BoardMix",
+                    "windowKey": "BoardMix",
+                    "target": "",
+                    "avatarName": "BoardMix",
+                    "desc": "一键生成PPT，思维导图和图片",
+                    "url": "https://boardmix.cn/app/home/ppt"
+                },
+                {
+                    "id": 3,
+                    "name": "LogoAI",
+                    "windowKey": "LogoAI",
+                    "target": "",
+                    "avatarName": "LogoAI",
+                    "desc": "生成Logo",
+                    "url": "https://www.logoai.com/logo-maker"
                 }
             ]
         },
@@ -131,7 +159,9 @@
             "icon": "appLight",
             "activeIcon": "appFill",
             "link": "/settings",
-            "activeLink": ["/settings"]
+            "activeLink": [
+                "/settings"
+            ]
         }
     ]
 }
