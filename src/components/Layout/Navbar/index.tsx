@@ -1,10 +1,12 @@
 "use client";
 
 import { Center, Box, Flex } from "@chakra-ui/react";
-import Avatar from "@/components/Avatar";
 import { useRouter,usePathname } from "next/navigation";
 import MyIcon from '@/components/Icon'
-import routerJson from '@/utils/router.json'
+import { useEffect, useState } from "react";
+import { PageRouterEntity } from "@/types/page";
+import { invoke } from "@tauri-apps/api/tauri";
+import routerLocal from '@/utils/router.json'
 
 const HUMAN_ICON = `/icon/human.png`;
 
@@ -12,6 +14,7 @@ const HUMAN_ICON = `/icon/human.png`;
 const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
+  const [navbar,setNavbar] = useState<PageRouterEntity[]>([])
   const itemStyles: any = {
     my: 3,
     display: 'flex',
@@ -24,14 +27,25 @@ const Navbar = () => {
       bg: 'myWhite.600'
     }
   };
-
+  /* 获取路由 */
+  useEffect(()=>{
+    const setRouterInfo = async () => {
+      const res: any = await invoke('read_extra_url')
+      if(res){
+        setNavbar(JSON.parse(res).navbar)
+      }else{
+        setNavbar(routerLocal.navbar as unknown as PageRouterEntity[])
+      }
+    }
+    setRouterInfo()
+  },[])
   return (
     <div className='h-full w-36 pt-6 box-border bg-white dark:bg-zinc-900'>
       {/* <Center className='mb-5 pt-6'>
         <Avatar className='w-16 h-16' src={HUMAN_ICON} />
       </Center> */}
       <Flex flexDirection='column' className='pt-4'>
-        {routerJson.navbar.map(item=>(
+        {navbar&&navbar.map(item=>(
           <Center key={item.link}>
             <Box 
               className='w-20 h-16 hover:bg-white dark:hover:bg-gray-800'

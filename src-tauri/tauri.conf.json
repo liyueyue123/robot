@@ -29,6 +29,27 @@
         "all": true,
         "open": ".*"
       },
+      "fs": {
+        "all": false,
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "createDir": true,
+        "exists": true,
+        "removeFile": true,
+        "removeDir": true,
+        "scope": [
+          "$HOME/robot_conf/**",
+          "$DOWNLOAD/**",
+          "$DESKTOP/robot_conf/**"
+        ]
+      },
+      "path": {
+        "all": true
+      },
+      "os": {
+        "all": true
+      },
       "dialog": {
         "all": true
       },
@@ -67,7 +88,7 @@
       "longDescription": "",
       "macOS": {
         "entitlements": null,
-        "exceptionDomain": "plmapp.chison.com.cn",
+        "exceptionDomain": "",
         "frameworks": [],
         "providerShortName": null,
         "signingIdentity": null

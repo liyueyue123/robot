@@ -21,13 +21,7 @@ pub fn check_update_dialog(title: String, msg: String, event: &str, app_handle: 
 }
 
 #[command]
-pub async fn download_and_install(app: AppHandle) {
-    // if let Ok(update_resp) = app.updater().check().await {
-    //     update_resp
-    //         .download_and_install()
-    //         .await
-    //         .expect("Failed to download and install");
-    // }
+pub async fn download_and_install() {
     let update = APP_UPDATE.get().unwrap();
     update
         .clone()

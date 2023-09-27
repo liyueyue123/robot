@@ -15,8 +15,8 @@ pub async fn close_splashscreen(window: tauri::Window) {
 }
 
 #[command]
-pub async fn create_external_windows(label: String, external_url: String) {
+pub async fn create_external_windows(label: String, title :String, external_url: String) {
     info!("label:{}", label);
     info!("external_url:{}", external_url);
-    window::create_external_windows(label, external_url);
+    window::create_external_windows(label, title, external_url);
 }

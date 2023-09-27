@@ -8,7 +8,7 @@ import styles from './index.module.css';
 import { PageRouterEntity } from "@/types/page";
 import { invoke } from "@tauri-apps/api/tauri";
 
-const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
+const ChisonLinks = (props: {customInfo?: PageRouterEntity}) => {
   const { customInfo } = props
   const theme = useTheme();
   const router = useRouter();
@@ -21,18 +21,18 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
   };
 
   /* 打开window */
-  const openWindow = async (url: string,key: string)=>{
+  const openWindow = async (url: string,name: string,key: string)=>{
     console.warn('url----',url,key)
-    await invoke('create_external_windows',{label:`office_outlink_${key}`,externalUrl:url})
+    await invoke('create_external_windows',{label:`office_outlink_${key}`,title:name,externalUrl:url})
   }
   return (
     <>
-      <Box className='w-full text-2xl font-bold text-blue-700 pb-6'>我的{customInfo.label}</Box>
-      {Array.isArray(customInfo.ItemList)&&customInfo.ItemList.length>0?<Grid
+      <Box className='w-full text-2xl font-bold text-blue-700 pb-6'>我的{customInfo?.label}</Box>
+      {customInfo&&Array.isArray(customInfo.ItemList)&&customInfo.ItemList.length>0?<Grid
         gridTemplateColumns={['1fr', 'repeat(3,1fr)', 'repeat(4,1fr)', 'repeat(5,1fr)']}
         gridGap={5}
       >
-        {customInfo.ItemList?.map((app) => (
+        {customInfo&&customInfo.ItemList?.map((app) => (
           <Card
             key={app.id}
             py={4}
@@ -57,7 +57,7 @@ const ChisonLinks = (props: {customInfo: PageRouterEntity}) => {
             }}
             onClick={() => {
               if(!app.target){
-                openWindow(app.url,app.windowKey)
+                openWindow(app.url,app.name,app.windowKey)
               }else{
                 router.push(`${customInfo.link}/outlink?${createQueryString('url', app.url)}`)
               }

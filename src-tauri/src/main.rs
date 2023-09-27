@@ -8,7 +8,7 @@ use app::{
         meun::{init_system_menu, menu_event},
         tray::{init_system_tray, system_tray_menu_event},
     },
-    plugin::{config, update, window},
+    plugin::{config, fs, update, window},
     setup,
 };
 use tauri::{generate_context, AppHandle, Builder};
@@ -34,6 +34,7 @@ async fn main() {
             config::get_version,
             window::close_splashscreen,
             window::create_external_windows,
+            fs::read_extra_url,
         ])
         .menu(init_system_menu())
         .system_tray(init_system_tray())

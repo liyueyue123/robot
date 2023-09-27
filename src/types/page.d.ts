@@ -10,7 +10,6 @@ export type PageRouterEntity = {
 /* 页面内容 */
 export type PageItemEntity = {
     id: number
-    icon: string 
     name: string
     windowKey: string
     target?: string
