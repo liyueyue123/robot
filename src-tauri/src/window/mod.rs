@@ -24,7 +24,7 @@ pub fn create_external_windows(label: String, title: String, external_url: Strin
         label, /* the unique window label */
         tauri::WindowUrl::External(external_url.parse().unwrap()),
     )
-    .min_inner_size(1000.00, 600.00)
+    .min_inner_size(360.00, 600.00)
     .title(title)
     .menu(Menu::new())
     .build()
