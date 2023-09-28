@@ -1,35 +1,35 @@
 {
-  "version": "v1.9.1",
+  "version": "v1.9.2",
   "notes": "Note: 功能添加！\n\nFeat:\n\n- 更改软件名称\n- windows中文安装步骤\n- 屏幕尺寸大小调整",
-  "pub_date": "2023-09-28T06:54:23.627Z",
+  "pub_date": "2023-09-28T07:24:31.457Z",
   "platforms": {
     "win64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNG1ld0FwczZIeU9yQ3dwai9sTS9PazJaYmt5eGx3elZDZWhxZjBwb2YyU0M2RlNxOE1FbXlwcDBidUh6RDB4U1RCdGdoMHVxL3A2VnNiUnVETlpVN1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODgzODA2CWZpbGU6QUnliqnmiYtfMS45LjFfeDY0X3poLUNOLm1zaS56aXAKcTVxQnVIMTdVaTZoc28zbzBxRW1KRnhaUS9nUWVzcG1heUJqRmNuN0NZVEJhRUNJa3IxT1BVRDZpOW9NMmlubXFPVmdEOGZ5NmZLN0VFL3ZEVkZuQ3c9PQo=",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.1/AI._1.9.1_windows_x86_64.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHZKMW9LUjF0c2YrL2ZOUHViYVZ0cTZ1STlCaGZBQUo4aW9jZEIxSTZNWi93SGtYTk1UcjRuUndEZkY4SkZnNWMyWmoxZWdQOHA1UDF5bHBBV0taV3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NjU0CWZpbGU6QUnliqnmiYtfMS45LjJfeDY0X3poLUNOLm1zaS56aXAKVWtFdUJLRzZCTzZHY2FvcHN0V1dQTkNrbm5URjdsWTVtMHBpM1d2N1BjM2JBajZzY01zbHpQOGZaazNZN0FobnR3MEV3aFJKbm1lWkxhbVBjUHpwRFE9PQo=",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_windows_x86_64.msi.zip"
     },
     "linux": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHFSQXh1aHlIZCt4d2hxbENYVGI2OGVEVElORElIY25Id1kwM2JUUTJ5UEJLVjRHVjl3R1NmZ1NOTXY3cDdsanUvWVB2TEZUUnBqUUYyTzVITmtGMFFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODgzOTQ5CWZpbGU6YWkt5YqpLeaJi18xLjkuMV9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKTDFkQmlkOUJPSnRPQlZGOU9iZk1EWjBKYTZvUGtYc1lnSDdiaC94b3VuNkU5dTV5NG5Oek02YnNRcXpOdTJWbFl6Ykk3d3dzR1BiK2VidWJ4K2RwRFE9PQo=",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.1/AI._1.9.1_linux_x86_64.AppImage.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHZBT3RKL1oyUTFGNGRXaTNyT0VUUmFOcGMvNElTVkdCUjQ4VFV3WFFjYjFydURpbmhQR2F5dXNrOUpaWkJzVXNHeUhVa3BBNXlGRzNCci9QaEcvdlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NzcyCWZpbGU6YWkt5YqpLeaJi18xLjkuMl9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKUUNjenpCbmNnV3R0QXhYNGY5VmNvK0hZOEpGbFp6SGJJem9vZDZzUVlPMGtDU3ZTNzdMV2tDNGZvRUlzWmdxcHMrdW5RWE1BYUhWdEREdmZnUWdTQnc9PQo=",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_linux_x86_64.AppImage.tar.gz"
     },
     "darwin": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHFIaktENlBDNHdWZUtBVlowN3NlYVJLUXBkYkZPcnJpUDJDVFl3NklzTUZOS1pMVHBHYnhXRFdacXBidDNGbHA5TlVnSXg2MG9IUUxqVjdDMUp3R3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODgzNTMxCWZpbGU6QUnliqnmiYsuYXBwLnRhci5negozdExhR3NibE4xTjQyQTF4TzAxR3FVOWk0T2E0aGFDYjJOMzZFKzBEdXVNRnR0cjVSMmJIdnkzYndabVJERGF0dXRVSGRVa3d1NkdMdzlta3k0UHZCdz09Cg==",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.1/AI._1.9.1_macos_x86_64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHMzUXJxVm9FV3JBT2tDMC9yL3dsTHQ4bEhVcGtZcmVZM2JWVkRkN3RiWDVHV1dmSE1iOGpLcDk3ZmFidU9qUHBZRVBad1ExVkU2NERyN2pHU2VNS1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1MzMzCWZpbGU6QUnliqnmiYsuYXBwLnRhci5negpVVkxGcjJHUW05bmNRR2hNK2FrWGtUN25EZHdMOUJ3cUcxZ0VTNmlZTFJjdk1wTmkySjEzekZqMjhjY3J0TXV6T3RxSzVLY3orL2pyZlBMeWU2NmRCdz09Cg==",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_macos_x86_64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNGtXa0taWlE0cXNlOWdBbjJocnpxL0tCV2RWNXBidlVIb0RrL2tzTkltQUV4R2hTN0NIY2t5dnByMCtZTDdRdyt4S2F1ZVFOQkRWQ1VtWGRjZmcyTGdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODgzNjU1CWZpbGU6QUnliqnmiYsuYXBwLnRhci5negpITkdsSUJ2VzA3Z1ZHNTkvYkNPMEVRMlhYSE1WWmhOVFlaT2lyenAvUDk3cWpEdGFwczd6elJQN3lXSDRwZkV0UE1Jc3ptUWU0MjdqREtTYmRiUXhDQT09Cg==",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.1/AI._1.9.1_macos_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNG9pSkkrR29YSlpRTzlmdlFCV3V4MHZKN3Y1OGZnMVoyZTRnb1RsY01UUjJWaWZYbm04Ym5CYzhhajlyV040K09WakdDd0xteDVaRWlkcm5CV3ZxUUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NDM2CWZpbGU6QUnliqnmiYsuYXBwLnRhci5nego5eG5mNEVCVWMvVjVleFNrSmpqZFVUSjNldkNtbkFyN0xoenNIdE1OaWEySk9na2llU0o2T0IyVUxOSEV2Qm53UW1MYTRYTDRkdXIwYUJLbkVDRXlDZz09Cg==",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_macos_aarch64.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHFIaktENlBDNHdWZUtBVlowN3NlYVJLUXBkYkZPcnJpUDJDVFl3NklzTUZOS1pMVHBHYnhXRFdacXBidDNGbHA5TlVnSXg2MG9IUUxqVjdDMUp3R3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODgzNTMxCWZpbGU6QUnliqnmiYsuYXBwLnRhci5negozdExhR3NibE4xTjQyQTF4TzAxR3FVOWk0T2E0aGFDYjJOMzZFKzBEdXVNRnR0cjVSMmJIdnkzYndabVJERGF0dXRVSGRVa3d1NkdMdzlta3k0UHZCdz09Cg==",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.1/AI._1.9.1_macos_x86_64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHMzUXJxVm9FV3JBT2tDMC9yL3dsTHQ4bEhVcGtZcmVZM2JWVkRkN3RiWDVHV1dmSE1iOGpLcDk3ZmFidU9qUHBZRVBad1ExVkU2NERyN2pHU2VNS1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1MzMzCWZpbGU6QUnliqnmiYsuYXBwLnRhci5negpVVkxGcjJHUW05bmNRR2hNK2FrWGtUN25EZHdMOUJ3cUcxZ0VTNmlZTFJjdk1wTmkySjEzekZqMjhjY3J0TXV6T3RxSzVLY3orL2pyZlBMeWU2NmRCdz09Cg==",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_macos_x86_64.app.tar.gz"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHFSQXh1aHlIZCt4d2hxbENYVGI2OGVEVElORElIY25Id1kwM2JUUTJ5UEJLVjRHVjl3R1NmZ1NOTXY3cDdsanUvWVB2TEZUUnBqUUYyTzVITmtGMFFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODgzOTQ5CWZpbGU6YWkt5YqpLeaJi18xLjkuMV9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKTDFkQmlkOUJPSnRPQlZGOU9iZk1EWjBKYTZvUGtYc1lnSDdiaC94b3VuNkU5dTV5NG5Oek02YnNRcXpOdTJWbFl6Ykk3d3dzR1BiK2VidWJ4K2RwRFE9PQo=",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.1/AI._1.9.1_linux_x86_64.AppImage.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHZBT3RKL1oyUTFGNGRXaTNyT0VUUmFOcGMvNElTVkdCUjQ4VFV3WFFjYjFydURpbmhQR2F5dXNrOUpaWkJzVXNHeUhVa3BBNXlGRzNCci9QaEcvdlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NzcyCWZpbGU6YWkt5YqpLeaJi18xLjkuMl9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKUUNjenpCbmNnV3R0QXhYNGY5VmNvK0hZOEpGbFp6SGJJem9vZDZzUVlPMGtDU3ZTNzdMV2tDNGZvRUlzWmdxcHMrdW5RWE1BYUhWdEREdmZnUWdTQnc9PQo=",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_linux_x86_64.AppImage.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNG1ld0FwczZIeU9yQ3dwai9sTS9PazJaYmt5eGx3elZDZWhxZjBwb2YyU0M2RlNxOE1FbXlwcDBidUh6RDB4U1RCdGdoMHVxL3A2VnNiUnVETlpVN1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODgzODA2CWZpbGU6QUnliqnmiYtfMS45LjFfeDY0X3poLUNOLm1zaS56aXAKcTVxQnVIMTdVaTZoc28zbzBxRW1KRnhaUS9nUWVzcG1heUJqRmNuN0NZVEJhRUNJa3IxT1BVRDZpOW9NMmlubXFPVmdEOGZ5NmZLN0VFL3ZEVkZuQ3c9PQo=",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.1/AI._1.9.1_windows_x86_64.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHZKMW9LUjF0c2YrL2ZOUHViYVZ0cTZ1STlCaGZBQUo4aW9jZEIxSTZNWi93SGtYTk1UcjRuUndEZkY4SkZnNWMyWmoxZWdQOHA1UDF5bHBBV0taV3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NjU0CWZpbGU6QUnliqnmiYtfMS45LjJfeDY0X3poLUNOLm1zaS56aXAKVWtFdUJLRzZCTzZHY2FvcHN0V1dQTkNrbm5URjdsWTVtMHBpM1d2N1BjM2JBajZzY01zbHpQOGZaazNZN0FobnR3MEV3aFJKbm1lWkxhbVBjUHpwRFE9PQo=",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_windows_x86_64.msi.zip"
     }
   }
 }
