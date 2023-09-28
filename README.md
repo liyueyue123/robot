@@ -35,9 +35,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
+## 📦 MAC Install
 如果您遇到错误消息"robot" is damaged and can't be opened. You should move it to the Trash。在 macOS 上安装软件时，可能是由于 macOS 中的安全设置限制。要解决此问题，请在终端中尝试以下命令：
 
 ```bash
-sudo xattr -r -d com.apple.quarantine /YOUR_PATH/ChatGPT.app
+sudo xattr -r -d com.apple.quarantine /YOUR_PATH/robot.app
 ```
