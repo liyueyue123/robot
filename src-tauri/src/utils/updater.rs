@@ -29,12 +29,12 @@ pub fn run_check_update(app: AppHandle<Wry>, silent: bool, has_msg: Option<bool>
                     // let parent_window = windows.values().next();
                     // tauri::api::dialog::message(
                     //     parent_window,
-                    //     "AI助手",
-                    //     "您的AI助手是最新的",
+                    //     "robot",
+                    //     "您的robot是最新的",
                     // );
                     check_update_dialog(
-                        "AI助手".to_string(),
-                        "您的AI助手是最新的".to_string(),
+                        "robot".to_string(),
+                        "您的robot是最新的".to_string(),
                         ALREADY_UP_TO_DATE_DIALOG_ENVET,
                         app,
                     );
@@ -53,13 +53,13 @@ pub async fn silent_install(app: AppHandle<Wry>, update: UpdateResponse<Wry>) ->
 
     let body = update.body().unwrap();
     check_update_dialog(
-        format!(r#"新版本的 {} 已经发布! "#, "AI助手"),
+        format!(r#"新版本的 {} 已经发布! "#, "robot"),
         format!(
             r#"{} {} 可供下載,您现在的版本是 {}
 
     Release Notes
     {}"#,
-            "AI助手",
+            "robot",
             update.latest_version(),
             package_info.version,
             body
@@ -79,13 +79,13 @@ pub async fn prompt_for_install(app: AppHandle<Wry>, update: UpdateResponse<Wry>
 
     let body = update.body().unwrap();
     check_update_dialog(
-        format!(r#"新版本的 {} 已经发布! "#, "AI助手"),
+        format!(r#"新版本的 {} 已经发布! "#, "robot"),
         format!(
             r#"{} {} 可供下載,您现在的版本是 {}
 
     Release Notes
     {}"#,
-            "AI助手",
+            "robot",
             update.latest_version(),
             package_info.version,
             body

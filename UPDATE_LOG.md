@@ -1,5 +1,14 @@
 # UPDATE LOG
 
+## v1.9.3
+
+Note: 功能添加！
+
+Feat:
+
+- windows中文安装步骤
+- 屏幕尺寸大小调整
+
 ## v1.9.2
 
 Note: 功能添加！

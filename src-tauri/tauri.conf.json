@@ -7,8 +7,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "AI助手",
-    "version": "1.9.2"
+    "productName": "robot",
+    "version": "1.9.3"
   },
   "tauri": {
     "systemTray": {
@@ -92,8 +92,8 @@
         "signingIdentity": null
       },
       "resources": [],
-      "longDescription": "AI助手提升您的生产力，助您事半功倍！",
-      "shortDescription": "AI助手",
+      "longDescription": "robot助手提升您的生产力，助您事半功倍！",
+      "shortDescription": "robot",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
@@ -132,7 +132,7 @@
         "width": 960,
         "minWidth": 360,
         "resizable": true,
-        "title": "AI助手",
+        "title": "robot",
         "titleBarStyle": "Overlay",
         "hiddenTitle": true,
         "center": true,

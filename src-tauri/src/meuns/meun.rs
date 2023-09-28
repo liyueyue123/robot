@@ -4,7 +4,7 @@ use crate::{config, utils};
 
 const ABOUT: &str = "about";
 const CHECK_UPDATE: &str = "check_update";
-const NAME: &str = "AI助手";
+const NAME: &str = "robot";
 
 pub fn init_system_menu() -> Menu {
     let app_menu = Submenu::new(
@@ -49,7 +49,7 @@ pub fn menu_event(event: WindowMenuEvent<tauri::Wry>) {
             tauri::api::dialog::message(
                 parent_window,
                 "Version",
-                format!(r#"AI助手当前版本 {} "#, tauri_conf.package.version.unwrap()),
+                format!(r#"robot当前版本 {} "#, tauri_conf.package.version.unwrap()),
             );
         }
         CHECK_UPDATE => {
