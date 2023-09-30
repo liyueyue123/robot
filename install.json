@@ -1,35 +1,35 @@
 {
-  "version": "v1.9.2",
-  "notes": "Note: 功能添加！\n\nFeat:\n\n- 更改软件名称\n- windows中文安装步骤\n- 屏幕尺寸大小调整",
-  "pub_date": "2023-09-28T07:24:31.457Z",
+  "version": "v1.9.3",
+  "notes": "Note: 功能添加！\n\nFeat:\n\n- windows中文安装步骤。\n- 屏幕尺寸大小调整。",
+  "pub_date": "2023-09-30T01:40:29.573Z",
   "platforms": {
     "win64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHZKMW9LUjF0c2YrL2ZOUHViYVZ0cTZ1STlCaGZBQUo4aW9jZEIxSTZNWi93SGtYTk1UcjRuUndEZkY4SkZnNWMyWmoxZWdQOHA1UDF5bHBBV0taV3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NjU0CWZpbGU6QUnliqnmiYtfMS45LjJfeDY0X3poLUNOLm1zaS56aXAKVWtFdUJLRzZCTzZHY2FvcHN0V1dQTkNrbm5URjdsWTVtMHBpM1d2N1BjM2JBajZzY01zbHpQOGZaazNZN0FobnR3MEV3aFJKbm1lWkxhbVBjUHpwRFE9PQo=",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_windows_x86_64.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNGc0VERuKzMyaklBSXVSWVlFamxOMmxZWW9KYVlqU1RIdnhjM3ZnMXZzVmd1VWNDNUQ5QjBzYkxMTXZzQmNWNjU3UmNBOGc5THVocjRpYUZPYW1oV1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk2MDM3OTY5CWZpbGU6cm9ib3RfMS45LjNfeDY0X3poLUNOLm1zaS56aXAKQ1BiOENVclBpMmcwMStXdnJvVnN6cFpTOGRIT1FEL0ozNlBCbWl2dnEyRkVvOEVOeGhEWldqaUYwaVNHQWp3eXZBMlhWTUY0ZXhuYW9vUFhDSW5nQXc9PQo=",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.3/robot_1.9.3_windows_x86_64.msi.zip"
     },
     "linux": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHZBT3RKL1oyUTFGNGRXaTNyT0VUUmFOcGMvNElTVkdCUjQ4VFV3WFFjYjFydURpbmhQR2F5dXNrOUpaWkJzVXNHeUhVa3BBNXlGRzNCci9QaEcvdlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NzcyCWZpbGU6YWkt5YqpLeaJi18xLjkuMl9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKUUNjenpCbmNnV3R0QXhYNGY5VmNvK0hZOEpGbFp6SGJJem9vZDZzUVlPMGtDU3ZTNzdMV2tDNGZvRUlzWmdxcHMrdW5RWE1BYUhWdEREdmZnUWdTQnc9PQo=",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_linux_x86_64.AppImage.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNGhucnpoRWUzL2g1aHpRaXByMEVjRmo4b3Y5eExrMzV6L2Jrb2hBTzRTWTVJdGFEL3RuNVFKK1dYRDVSSnlSZXJBeWNnSmNYRWtUL1Z5bVcrNW1aYnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk2MDM3NzEwCWZpbGU6cm9ib3RfMS45LjNfYW1kNjQuQXBwSW1hZ2UudGFyLmd6Cko0WS9nWmE1UGZjKytvV2lrYm1vYi9TdGlzOXYvUjBDSlB0QjNWeURENWV2Z1lIM2lyRTVNTGtHK09TOUVpVzJaM0NTekZIZHpFb3IvOVVON1p6ckF3PT0K",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.3/robot_1.9.3_linux_x86_64.AppImage.tar.gz"
     },
     "darwin": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHMzUXJxVm9FV3JBT2tDMC9yL3dsTHQ4bEhVcGtZcmVZM2JWVkRkN3RiWDVHV1dmSE1iOGpLcDk3ZmFidU9qUHBZRVBad1ExVkU2NERyN2pHU2VNS1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1MzMzCWZpbGU6QUnliqnmiYsuYXBwLnRhci5negpVVkxGcjJHUW05bmNRR2hNK2FrWGtUN25EZHdMOUJ3cUcxZ0VTNmlZTFJjdk1wTmkySjEzekZqMjhjY3J0TXV6T3RxSzVLY3orL2pyZlBMeWU2NmRCdz09Cg==",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_macos_x86_64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHE2d09mZVYzZGVUOUFiYmo2T1FDZHIzZFkyWDF6QjVCV1l6ZDVYbkV0OTBRYk9ibjdZamhuOGlFWVNXL2NCTWxiUERvZ1FZZ0lQSERMRHJpWjY5MlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk2MDM3Nzk5CWZpbGU6cm9ib3QuYXBwLnRhci5negpuWE9WaE9OYkdzR3ZYNkptVFlCN1NqTWJPTUJWV1kweWtTV21EZFJxeUpZRDViMzFwcS8vMXpVeVZsV0xjUVd5Vk4zR1BBSTFlNUorazFlaWRhdzhDUT09Cg==",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.3/robot_1.9.3_macos_x86_64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNG9pSkkrR29YSlpRTzlmdlFCV3V4MHZKN3Y1OGZnMVoyZTRnb1RsY01UUjJWaWZYbm04Ym5CYzhhajlyV040K09WakdDd0xteDVaRWlkcm5CV3ZxUUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NDM2CWZpbGU6QUnliqnmiYsuYXBwLnRhci5nego5eG5mNEVCVWMvVjVleFNrSmpqZFVUSjNldkNtbkFyN0xoenNIdE1OaWEySk9na2llU0o2T0IyVUxOSEV2Qm53UW1MYTRYTDRkdXIwYUJLbkVDRXlDZz09Cg==",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_macos_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHRxU3ZRWFhrK2QrdkR5Z3h1YVgyTkwrdVZndG5UVy92TzR0NVU2K0Z5T3pWSXBCclBCVkxld1VycW1YaXArbHVNRUk3bG9meVUwR3krZmNaRDJlb0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk2MDM3NjU3CWZpbGU6cm9ib3QuYXBwLnRhci5negpnTFFQSTdFdVh0VDR2TlhEbjBFbDVkUlY1UUtSN0hKYWs4UHBzaGJwS0poaThncmF6VUJlZzJOL0hrb0E3TEM4dmFIcXFHSUJnb0lsV3NSb2JVZmpCdz09Cg==",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.3/robot_1.9.3_macos_aarch64.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHMzUXJxVm9FV3JBT2tDMC9yL3dsTHQ4bEhVcGtZcmVZM2JWVkRkN3RiWDVHV1dmSE1iOGpLcDk3ZmFidU9qUHBZRVBad1ExVkU2NERyN2pHU2VNS1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1MzMzCWZpbGU6QUnliqnmiYsuYXBwLnRhci5negpVVkxGcjJHUW05bmNRR2hNK2FrWGtUN25EZHdMOUJ3cUcxZ0VTNmlZTFJjdk1wTmkySjEzekZqMjhjY3J0TXV6T3RxSzVLY3orL2pyZlBMeWU2NmRCdz09Cg==",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_macos_x86_64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHE2d09mZVYzZGVUOUFiYmo2T1FDZHIzZFkyWDF6QjVCV1l6ZDVYbkV0OTBRYk9ibjdZamhuOGlFWVNXL2NCTWxiUERvZ1FZZ0lQSERMRHJpWjY5MlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk2MDM3Nzk5CWZpbGU6cm9ib3QuYXBwLnRhci5negpuWE9WaE9OYkdzR3ZYNkptVFlCN1NqTWJPTUJWV1kweWtTV21EZFJxeUpZRDViMzFwcS8vMXpVeVZsV0xjUVd5Vk4zR1BBSTFlNUorazFlaWRhdzhDUT09Cg==",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.3/robot_1.9.3_macos_x86_64.app.tar.gz"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHZBT3RKL1oyUTFGNGRXaTNyT0VUUmFOcGMvNElTVkdCUjQ4VFV3WFFjYjFydURpbmhQR2F5dXNrOUpaWkJzVXNHeUhVa3BBNXlGRzNCci9QaEcvdlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NzcyCWZpbGU6YWkt5YqpLeaJi18xLjkuMl9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKUUNjenpCbmNnV3R0QXhYNGY5VmNvK0hZOEpGbFp6SGJJem9vZDZzUVlPMGtDU3ZTNzdMV2tDNGZvRUlzWmdxcHMrdW5RWE1BYUhWdEREdmZnUWdTQnc9PQo=",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_linux_x86_64.AppImage.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNGhucnpoRWUzL2g1aHpRaXByMEVjRmo4b3Y5eExrMzV6L2Jrb2hBTzRTWTVJdGFEL3RuNVFKK1dYRDVSSnlSZXJBeWNnSmNYRWtUL1Z5bVcrNW1aYnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk2MDM3NzEwCWZpbGU6cm9ib3RfMS45LjNfYW1kNjQuQXBwSW1hZ2UudGFyLmd6Cko0WS9nWmE1UGZjKytvV2lrYm1vYi9TdGlzOXYvUjBDSlB0QjNWeURENWV2Z1lIM2lyRTVNTGtHK09TOUVpVzJaM0NTekZIZHpFb3IvOVVON1p6ckF3PT0K",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.3/robot_1.9.3_linux_x86_64.AppImage.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNHZKMW9LUjF0c2YrL2ZOUHViYVZ0cTZ1STlCaGZBQUo4aW9jZEIxSTZNWi93SGtYTk1UcjRuUndEZkY4SkZnNWMyWmoxZWdQOHA1UDF5bHBBV0taV3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk1ODg1NjU0CWZpbGU6QUnliqnmiYtfMS45LjJfeDY0X3poLUNOLm1zaS56aXAKVWtFdUJLRzZCTzZHY2FvcHN0V1dQTkNrbm5URjdsWTVtMHBpM1d2N1BjM2JBajZzY01zbHpQOGZaazNZN0FobnR3MEV3aFJKbm1lWkxhbVBjUHpwRFE9PQo=",
-      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.2/AI._1.9.2_windows_x86_64.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRajQrVGVtSWpGNGc0VERuKzMyaklBSXVSWVlFamxOMmxZWW9KYVlqU1RIdnhjM3ZnMXZzVmd1VWNDNUQ5QjBzYkxMTXZzQmNWNjU3UmNBOGc5THVocjRpYUZPYW1oV1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk2MDM3OTY5CWZpbGU6cm9ib3RfMS45LjNfeDY0X3poLUNOLm1zaS56aXAKQ1BiOENVclBpMmcwMStXdnJvVnN6cFpTOGRIT1FEL0ozNlBCbWl2dnEyRkVvOEVOeGhEWldqaUYwaVNHQWp3eXZBMlhWTUY0ZXhuYW9vUFhDSW5nQXc9PQo=",
+      "url": "https://github.com/liyueyue123/robot/releases/download/v1.9.3/robot_1.9.3_windows_x86_64.msi.zip"
     }
   }
 }
