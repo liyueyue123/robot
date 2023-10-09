@@ -26,7 +26,6 @@ pub fn create_external_windows(label: String, title: String, external_url: Strin
     )
     .min_inner_size(360.00, 600.00)
     .title(title)
-    .menu(Menu::new())
     .build()
     .expect("failed to build window");
 }

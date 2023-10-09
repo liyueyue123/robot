@@ -1,8 +1,6 @@
-// event_handler.rs
+use tauri::{AppHandle, Manager};
 
-use tauri::AppHandle;
-
-pub fn handle_updater_event(_app_handle: &'_ AppHandle, event: tauri::RunEvent) {
+pub fn handle_event(app: &AppHandle, event: tauri::RunEvent) {
     match event {
         tauri::RunEvent::Updater(updater_event) => {
             match updater_event {
@@ -41,6 +39,19 @@ pub fn handle_updater_event(_app_handle: &'_ AppHandle, event: tauri::RunEvent) 
                 }
             }
         }
+
+        tauri::RunEvent::WindowEvent {
+            label,
+            event: win_event,
+            ..
+        } => match win_event {
+            tauri::WindowEvent::CloseRequested { api, .. } => {
+                let win = app.get_window(label.as_str()).unwrap();
+                win.hide().unwrap();
+                api.prevent_close();
+            }
+            _ => {}
+        },
         _ => {}
     }
 }

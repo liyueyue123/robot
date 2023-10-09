@@ -2,7 +2,7 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use app::{
-    event::run_event::handle_updater_event,
+    event::run_event::handle_event,
     init_context,
     meuns::{
         meun::{init_system_menu, menu_event},
@@ -18,7 +18,7 @@ use tauri_plugin_log::LogTarget;
 async fn main() {
     init_context().await;
 
-    let event_handler = |app_handle: &'_ AppHandle, event| handle_updater_event(app_handle, event);
+    let event_handler = |app_handle: &'_ AppHandle, event| handle_event(app_handle, event);
 
     Builder::default()
         .plugin(
