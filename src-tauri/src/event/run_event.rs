@@ -46,7 +46,11 @@ pub fn handle_event(app: &AppHandle, event: tauri::RunEvent) {
             ..
         } => match win_event {
             tauri::WindowEvent::CloseRequested { api, .. } => {
-                let win = app.get_window(label.as_str()).unwrap();
+                log::info!("CloseRequested:{}", label.as_str());
+                if label.as_str() != "main" {
+                    return;
+                }
+                let win = app.get_window("main").unwrap();
                 win.hide().unwrap();
                 api.prevent_close();
             }

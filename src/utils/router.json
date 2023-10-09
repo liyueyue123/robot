@@ -32,9 +32,9 @@
                 {
                     "id": 3,
                     "name": "产品助手",
-                    "windowKey": "Translation",
+                    "windowKey": "ProductAssistant",
                     "target": "",
-                    "avatarName": "Translation",
+                    "avatarName": "产品助手",
                     "desc": "祥生产品知识",
                     "url": "http://192.168.89.206:6019/chat/share?shareId=3t19cg42tvtslaisdyx62b2k"
                 },
