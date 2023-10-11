@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "robot",
-    "version": "1.9.5"
+    "version": "1.9.6"
   },
   "tauri": {
     "systemTray": {
@@ -39,6 +39,7 @@
         "removeFile": true,
         "removeDir": true,
         "scope": [
+          "$APPCONFIG/robot_config/**",
           "$HOME/robot_config/**",
           "$DOWNLOAD/**"
         ]
@@ -118,8 +119,9 @@
       "active": true,
       "dialog": false,
       "endpoints": [
-        "https://qiucheng.synology.me:801/latest.json"
-       
+        "https://gitee.com/mickytx/robot-version/releases/download/latest/latest.json",
+        "https://qiucheng.synology.me:801/latest.json",
+        "https://mickybaby.github.io/robot-version/latest.json"
       ],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEUyQzU4ODk4REVFNEUzMjMKUldRajQrVGVtSWpGNGs2WGIvV1Fxc1FRcFp5YmpmQVVSTk55REdnc1FlcmxRM2RRT3ppNWtIUE8K"
     },

@@ -70,6 +70,7 @@ dependencies = [
  "log",
  "mouse_position",
  "once_cell",
+ "reqwest",
  "serde",
  "serde_json",
  "state 0.6.0",
